@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company:</b>
+  <%= @performance.company %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @performance.customer %>
+</p>
+
+<p>
+  <b>Customer email:</b>
+  <%= @performance.customer_email %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @performance.name %>
+</p>
+
+<p>
+  <b>Perf start:</b>
+  <%= @performance.perf_start %>
+</p>
+
+<p>
+  <b>Perf end:</b>
+  <%= @performance.perf_end %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%= @performance.mail %>
+</p>
+
+<p>
+  <b>Willcall:</b>
+  <%= @performance.willcall %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @performance.description %>
+</p>
+
+<p>
+  <b>Areas:</b>
+  <%= @performance.areas %>
+</p>
+
+<p>
+  <b>Discounts:</b>
+  <%= @performance.discounts %>
+</p>
+
+<p>
+  <b>Pricechanges:</b>
+  <%= @performance.pricechanges %>
+</p>
+
+<p>
+  <b>Built:</b>
+  <%= @performance.built %>
+</p>
+
+<p>
+  <b>Proofsent:</b>
+  <%= @performance.proofsent %>
+</p>
+
+<p>
+  <b>Proofapproved:</b>
+  <%= @performance.proofapproved %>
+</p>
+
+<p>
+  <b>Onsale:</b>
+  <%= @performance.onsale %>
+</p>
+
+
+<%= link_to 'Edit', edit_performance_path(@performance) %> |
+<%= link_to 'Back', performances_path %>

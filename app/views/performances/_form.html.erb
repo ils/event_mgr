@@ -1,0 +1,81 @@
+<%= form_for(@performance) do |f| %>
+  <% if @performance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@performance.errors.count, "error") %> prohibited this performance from being saved:</h2>
+
+      <ul>
+      <% @performance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :customer %><br />
+    <%= f.text_field :customer %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_email %><br />
+    <%= f.text_field :customer_email %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :perf_start %><br />
+    <%= f.datetime_select :perf_start %>
+  </div>
+  <div class="field">
+    <%= f.label :perf_end %><br />
+    <%= f.datetime_select :perf_end %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br />
+    <%= f.check_box :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :willcall %><br />
+    <%= f.check_box :willcall %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :areas %><br />
+    <%= f.text_field :areas %>
+  </div>
+  <div class="field">
+    <%= f.label :discounts %><br />
+    <%= f.text_field :discounts %>
+  </div>
+  <div class="field">
+    <%= f.label :pricechanges %><br />
+    <%= f.text_field :pricechanges %>
+  </div>
+  <div class="field">
+    <%= f.label :built %><br />
+    <%= f.check_box :built %>
+  </div>
+  <div class="field">
+    <%= f.label :proofsent %><br />
+    <%= f.datetime_select :proofsent %>
+  </div>
+  <div class="field">
+    <%= f.label :proofapproved %><br />
+    <%= f.check_box :proofapproved %>
+  </div>
+  <div class="field">
+    <%= f.label :onsale %><br />
+    <%= f.check_box :onsale %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

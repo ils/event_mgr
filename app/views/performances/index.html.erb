@@ -1,0 +1,53 @@
+<h1>Listing performances</h1>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Customer</th>
+    <th>Customer email</th>
+    <th>Name</th>
+    <th>Perf start</th>
+    <th>Perf end</th>
+    <th>Mail</th>
+    <th>Willcall</th>
+    <th>Description</th>
+    <th>Areas</th>
+    <th>Discounts</th>
+    <th>Pricechanges</th>
+    <th>Built</th>
+    <th>Proofsent</th>
+    <th>Proofapproved</th>
+    <th>Onsale</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @performances.each do |performance| %>
+  <tr>
+    <td><%= performance.company %></td>
+    <td><%= performance.customer %></td>
+    <td><%= performance.customer_email %></td>
+    <td><%= performance.name %></td>
+    <td><%= performance.perf_start %></td>
+    <td><%= performance.perf_end %></td>
+    <td><%= performance.mail %></td>
+    <td><%= performance.willcall %></td>
+    <td><%= performance.description %></td>
+    <td><%= performance.areas %></td>
+    <td><%= performance.discounts %></td>
+    <td><%= performance.pricechanges %></td>
+    <td><%= performance.built %></td>
+    <td><%= performance.proofsent %></td>
+    <td><%= performance.proofapproved %></td>
+    <td><%= performance.onsale %></td>
+    <td><%= link_to 'Show', performance %></td>
+    <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
+    <td><%= link_to 'Destroy', performance, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Performance', new_performance_path %>
