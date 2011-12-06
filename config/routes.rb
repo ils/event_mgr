@@ -1,4 +1,6 @@
 EventMgr::Application.routes.draw do
+  get "pages/home"
+
   resources :performances
 
   # The priority is based upon order of creation:
