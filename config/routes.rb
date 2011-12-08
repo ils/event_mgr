@@ -1,7 +1,10 @@
 EventMgr::Application.routes.draw do
-  get "pages/home"
-
   resources :performances
+
+  root :to => "pages#home"
+  
+  match '/new', :to => 'performances#new'
+  match '/admin', :to => 'performances#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

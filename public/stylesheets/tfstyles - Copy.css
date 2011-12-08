@@ -1,0 +1,892 @@
+/* STYLES */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #003366;
+	font-family: Calibri, Tahoma, Helvetica, sans-serif;
+	font-size: 15px;
+	margin-top: 0px;
+	background-color: #EEEEEE;
+}
+
+a:link {
+	color: #003366;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #003366;
+}
+
+.custom-facetimeform input {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form#search {
+	margin: 15px 30px;
+}
+
+form#search input[type="submit"] {
+	background-color: transparent;
+	background-image: url("../images/go.png");
+	background-repeat: no-repeat;
+	border: 0px;
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	margin: 2px 0px 0px 5px;
+	text-indent: -9999px;
+	width: 33px;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+img {
+	border: 0px;
+}
+
+input.nobg {
+	background-image: none !important;
+}
+
+p {
+	margin: 15px 0px 0px 0px;
+}
+
+p.schedule-contact {
+	margin-top: 3em;
+}
+
+ul#nav {
+	list-style-type: none;
+	margin: 0px;
+}
+
+ul#nav li {
+	display: inline;
+	float: left;
+}
+
+ul#nav li a {
+	background-repeat: no-repeat;
+	border: 0px;
+	display: block;
+	font-size: 1%;
+	height: 33px;
+	padding: 0px;
+	text-indent: -9999px;
+}
+
+ul#nav li#about a {
+	background-image: url("../images/nav/about.gif");
+	cursor: default;
+	width: 121px;
+}
+
+ul#nav li#about ul {
+	width: 121px;
+}
+
+ul#nav li#about ul li a,
+ul#nav li#clients ul li a,
+ul#nav li#help ul li a,
+ul#nav li#solutions ul li a {
+	cursor: auto;
+}
+
+ul#nav li#clients a {
+	background-image: url("../images/nav/clients.gif");
+	cursor: default;
+	width: 109px;
+}
+
+ul#nav li#clients ul {
+	width: 109px;
+}
+
+ul#nav li#contact a {
+	background-image: url("../images/nav/contact.gif");
+	width: 258px;
+}
+
+ul#nav li#help a {
+	background-image: url("../images/nav/help.gif");
+	cursor: default;
+	width: 135px;
+}
+
+ul#nav li#help ul {
+	width: 135px;
+}
+
+ul#nav li#home a {
+	background-image: url("../images/nav/home.gif");
+	width: 207px;
+}
+
+ul#nav li#solutions a {
+	background-image: url("../images/nav/solutions.gif");
+	cursor: default;
+	width: 130px;
+}
+
+ul#nav li#solutions ul {
+	width: 130px;
+}
+
+ul#nav li ul li {
+	display: block;
+	float: none;
+}
+
+ul#nav li ul li a {
+	background-image: none !important;
+	float: none;
+	font-size: 12px;
+	font-weight: bold;
+	height: auto;
+	padding: 7px;
+	text-align: left;
+	text-indent: 0px;
+	width: auto !important;
+}
+
+#bottom {
+	margin: 0 auto;
+	width: 960px;
+	height: 44px;
+	background-color: #ffffff;
+	padding-top: 12px;
+	text-align: center;
+}
+
+#column-left {
+	float: left;
+	margin-right: 10px;
+	width: 443px;
+}
+
+#column-right {
+	float: left;
+	width: 443px;
+}
+
+#content { 
+	color: #333;
+	background: #ffffff;
+	width: 490px;
+	float: left;
+	display: inline;
+}
+
+#events {
+	float:none;
+	margin:0px 18px 0px 26px;
+}
+
+#eventsearch {
+	background-image:url(../images/bg-fade_event-search109.jpg);
+	background-repeat: no-repeat;
+	height: 109px;
+}
+
+#featuredvenues { 
+	background-image:url(../images/bg-fade_featured-venues999.jpg);
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+#featuredvenues dl {
+	color: #003366;
+	font-size: 13px;
+	margin: 0px 30px;
+	padding-top: 8px;
+}
+
+#featuredvenues dl dt {
+	font-weight: bold;
+	margin: 15px 0px 0px 0px;
+}
+
+#featuredvenues dl dt a {
+	color: #003366;
+	text-decoration: none;
+}
+
+#featuredvenues dl dt a:hover {
+	text-decoration: underline;
+}
+
+#footer { 
+	background: #eeeeee;
+	height: 44px;
+	width: 960px;
+	text-align: center;
+	vertical-align: top;
+}
+
+#footer a:link {
+	color: #212121;
+}
+
+#footer a:visited {
+	color: #212121;
+}
+
+#footer p {
+	color: #212121;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+#homenav {
+	float:right;
+	margin:0px 0px 0px 18px;
+}
+
+#jointhefun { 
+	background-image:url(../images/bg-fade_join-the-fun999.jpg);
+	background-repeat: no-repeat;
+	height: 362px;
+}
+
+#leftcolumn { 
+	color: #333;
+	background: #ffffff;
+	width: 245px;
+	float: left;
+}
+
+#logotopper { 
+	margin: 0 auto;
+	width: 960px;
+}
+
+#logotopper img {
+	display: block;
+}
+
+#maincolumn {
+	width: 671px;
+	float: left;
+}
+
+#onsalenow {
+	background-image:url(../images/bg-fade_on-sale-now999.jpg);
+	background-repeat: no-repeat;
+	height: 302px;
+}
+
+#onsalenow .listing {
+	border-top: 1px solid #bfbfbf;
+	padding: 14px 22px;
+}
+
+#onsalenow .listing h3 {
+	color: #003366;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+#onsalenow .listing img {
+	border: 1px solid #cccccc;
+	float: left;
+	margin: 0px 11px 0px 0px;
+}
+
+#onsalenow .listing p {
+	color: #003366;
+	font-size: 12px;
+}
+
+#onsalenow .listing p.buy {
+	float: right;
+	margin-top: 11px;
+}
+
+#onsalenow .listing p.buy a {
+	background-image: url("../images/btn_buy-tickets.gif");
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 1%;
+	height: 18px;
+	text-indent: -9999px;
+	width: 73px;
+}
+
+#onsalenow .listing p.when {
+	font-size: 18px;
+	margin-top: 1px;
+}
+
+#page {
+	margin: 0px 32px;
+}
+
+#page dl {
+	color: #003366;
+	font-size: 16px;
+	margin: 0px;
+}
+
+#page dl dd {
+	padding: 0px 22px 14px 22px;
+}
+
+#page dl dt {
+	border-top: 1px solid #bfbfbf;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 14px 22px 0px 22px;
+}
+
+#page dl dt a {
+	color: #003366;
+	text-decoration: none;
+}
+
+#page dl dt a:hover {
+	text-decoration: underline;
+}
+
+#page h2 {
+	background-color: #fd6f0d;
+	background-image: url("../images/bg-h2.png");
+	background-repeat: repeat-x;
+	color: #ffffff;
+	font-size: 21px;
+	height: 28px;
+	margin-top: 20px;
+	padding: 7px 10px;
+	text-transform: lowercase;
+}
+
+#page p.showing {
+	background-color: #ffffff;
+	color: #999999;
+	font-size: 12px;
+	margin: 0px;
+	padding: 14px 22px;
+}
+
+#page ul.options { 
+	list-style-type: none;
+	margin-top: 15px;
+	padding: 0px;
+}
+
+#page ul.options li {
+	background-image: url("../images/admin-arrow.png");
+	background-position: 0px 6px;
+	background-repeat: no-repeat;
+	display: inline;
+	margin-right: 12px;
+	padding: 0px 0px 0px 10px;
+}
+
+#page #hidden-search {
+	display: none;
+	padding-bottom: 13px;
+}
+
+#page #hidden-search h3 {
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+#page #hidden-search input,
+#page #hidden-search label {
+	display: block;
+	font-family: Calibri, Tahoma, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 1px;
+}
+
+#page #hidden-search input[type="submit"] {
+	float: left;
+	margin-top: 21px;
+}
+
+#page #hidden-search input[type="text"] {
+	width: 150px;
+}
+
+#page #hidden-search label {
+	color: #333333;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+#page #hidden-search .field {
+	float: left;
+	margin-right: 13px;
+	margin-top: 0px;
+}
+
+#page .listing {
+	border-top: 1px solid #bfbfbf;
+	padding: 14px 22px;
+}
+
+#page .listing h3 {
+	color: #003366;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+#page .listing img {
+	border: 1px solid #cccccc;
+	float: left;
+	margin: 0px 11px 0px 0px;
+}
+
+#page .listing p {
+	color: #003366;
+	font-size: 12px;
+}
+
+#page .listing p.buy {
+	float: right;
+	margin-top: 22px;
+}
+
+#page .listing p.buy a {
+	background-image: url("../images/btn_buy-tickets.gif");
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 1%;
+	height: 18px;
+	text-indent: -9999px;
+	width: 73px;
+}
+
+#page .listing p.when {
+	font-size: 18px;
+	margin-top: 1px;
+}
+
+#page .partial {
+	background-position: 0px 43px;
+}
+
+#page .results {
+	background-image: url("../images/bg-fade.png");
+	background-repeat: repeat-x;
+	padding-top: 4px;
+}
+
+#pager {
+	height: 24px;
+	line-height: 24px;
+	padding: 14px;
+	text-align: right;
+}
+
+#pager a {
+	background: #000;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	color: #fff;
+	display: inline-block;
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	margin-left: 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 24px;
+}
+
+#pager a.activeSlide {
+	background: #ff760a;
+	border-left: 1px solid rgba(255, 255, 255, .3);
+	border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+#picture {
+	float:right;
+	margin:0px 26px 10px 0px;
+}
+
+#rightcolumn { 
+	color: #333;
+	background: #ffffff;
+	width: 225px;
+	float: left;
+}
+
+#search input#form-q {
+	/*background-image: url("../images/bg-search.png");
+	background-position: center center;
+	background-repeat: no-repeat;*/
+	border: 1px solid #cccccc;
+	float: left;
+	padding: 5px 3px;
+	width: 134px;
+}
+
+#search-wide {
+	background-image: url("../images/bg-fade-search-wide.png");
+	background-position: 0px 46px;
+	background-repeat: repeat-x;
+	height: 98px;
+}
+
+#search-wide form#search {
+	margin: 15px 20px;
+}
+
+#search-wide input#form-q {
+	/*background-image: url("../images/bg-search.png");
+	background-position: center center;
+	background-repeat: no-repeat;*/
+	border: 1px solid #cccccc;
+	float: left;
+	padding: 5px 3px;
+	width: 222px;
+}
+
+#search-wide h2 {
+	background-image: url("../images/h2-event-search.png");
+	background-repeat: no-repeat;
+	font-size: 1%;
+	height: 42px;
+	text-indent: -9999px;
+}
+
+#slider {
+	height: 307px;
+}
+
+#slideshow {
+	bottom: 12px;
+	height: 235px;
+	left: 10px;
+	position: absolute;
+	width: 470px;
+}
+
+#slideshow_container {
+	background-color: #1d2532;
+	background-image: url("../images/bg-slideshow.png");
+	background-repeat: no-repeat;
+	border: 1px solid #93979a;
+	height: 293px;
+	margin-bottom: 14px;
+	position: relative;
+	width: 490px;
+}
+
+#subnav {
+	top:300px;
+	position:relative;
+	top:0px;
+	left:515px;
+	width:337px;
+	height:270px
+}
+
+#tixsolutions {
+	background-image:url(../images/bg-fade_tix-solutions247.jpg);
+	background-repeat: no-repeat;
+	height: 247px;
+}
+
+#venue-details {
+	background-image: url("../images/bg-fade-venue-details.png");
+	background-position: 0px 46px;
+	background-repeat: repeat-x;
+	margin: 20px 0px 0px 0px;
+}
+
+#venue-details address {
+	font-size: 14px;
+	font-style: normal;
+	margin: 1px 0px 0px 0px;
+}
+
+#venue-details dl {
+	font-size: 14px;
+	margin: 11px 0px 0px 0px;
+}
+
+#venue-details h2 {
+	background-image: url("../images/h2-venue-details.png");
+	background-repeat: no-repeat;
+	font-size: 1%;
+	height: 42px;
+	margin-bottom: 18px;
+	text-indent: -9999px;
+}
+
+#venue-details h4 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 11px 0px 0px 0px;
+}
+
+#venue-details div {
+	padding: 0px 20px;
+	text-align: right;
+}
+
+#venue-details img {
+	width: 278px;
+}
+
+#venue-details p.map {
+	font-size: 11px;
+	margin-top: 0px;
+	padding-bottom: 11px;
+}
+
+#venue-details p.seating {
+	float: right;
+	margin-top: 11px;
+}
+
+#venue-details p {
+	font-size: 14px;
+}
+
+#venue-details p.seating a {
+	background-image: url("../images/btn_seating-chart.png");
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 1%;
+	height: 18px;
+	text-indent: -9999px;
+	width: 87px;
+}
+
+#venue-left {
+	float: left;
+	margin-left: 10px;
+	width: 606px;
+}
+
+#venue-name {
+	left: 191px;
+	position: absolute;
+	top: 50%;
+}
+
+#venue-name.no-image {
+	left: 0px;
+}
+
+#venue-on-sale {
+	background-image: url("../images/bg-fade-on-sale-now.png");
+	background-position: 0px 46px;
+	background-repeat: repeat-x;
+	margin: 20px 0px 0px 0px;
+}
+
+#venue-on-sale h2 {
+	background-image: url("../images/h2-on-sale-now.png");
+	background-repeat: no-repeat;
+	font-size: 1%;
+	height: 42px;
+	text-indent: -9999px;
+}
+
+#venue-on-sale p.no-listings {
+	margin: 15px 20px;
+	padding: 0px 0px 200px 0px;
+}
+
+#venue-on-sale #prev-next {
+	font-size: 12px;
+	margin: 0px 20px;
+	position: relative;
+}
+
+#venue-on-sale #prev-next p#pg {
+	text-align: center;
+}
+
+#venue-on-sale #prev-next p#next {
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#venue-on-sale #prev-next p#prev {
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+}
+
+#venue-on-sale .first {
+	padding-top: 15px !important;
+}
+
+#venue-on-sale .listing {
+	border-top: 1px solid #bfbfbf;
+	margin: 0px 20px;
+	padding: 11px 0px;
+}
+
+#venue-on-sale .listing h3 {
+	color: #003366;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+#venue-on-sale .listing img {
+	border: 1px solid #cccccc;
+	float: left;
+	margin: 0px 11px 0px 0px;
+}
+
+#venue-on-sale .listing p {
+	color: #003366;
+	font-size: 18px;
+	margin: 1px 0px 0px 0px;
+}
+
+#venue-on-sale .listing p.buy {
+	float: left;
+	margin-top: 11px;
+}
+
+#venue-on-sale .listing p.buy a {
+	background-image: url("../images/btn_buy-tickets.gif");
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 1%;
+	height: 18px;
+	text-indent: -9999px;
+	width: 73px;
+}
+
+#venue-on-sale .listing p.when {
+	font-size: 18px;
+	margin-top: 1px;
+}
+
+#venue-overview {
+	margin-left: 21px;
+	min-height: 137px;
+	position: relative;
+}
+
+#venue-overview h1 {
+	font-size: 23px;
+}
+
+#venue-overview img {
+	border: 0px;
+	float: left;
+	margin: 0px 11px 0px 0px;
+	width: 180px;
+}
+
+#venue-overview p {
+	font-size: 15px;
+	margin: 0px;
+}
+
+#venue-right {
+	float: right;
+	margin-right: 10px;
+	width: 320px;
+}
+
+#welcome {
+	float:left;
+	margin:0px 0px 0px 0px;
+}
+
+#wrapper {
+	background: #ffffff;
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+#wrapper img {
+	display: block;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ",";
+	display: block;
+	font-size: 1px;
+	height: 0px;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.column {
+	float: left;
+	margin-right: 10px;
+}
+
+.date {
+	background-image: url("../images/calendar.png");
+	background-repeat: no-repeat;
+	float: left;
+	height: 100px;
+	margin-right: 15px;
+	position: relative;
+	width: 95px;
+}
+
+.date span.day {
+	color: #212121;
+	display: block;
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 36px;
+	text-align: center;
+}
+
+.date span.month {
+	left: 14px;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	text-transform: uppercase;
+	top: 19px;
+}
+
+.first {
+	border-top: 0px !important;
+}
+
+.placeholder {
+	color: #999999;
+}

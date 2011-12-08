@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #fff
+	background: #eee
 }
 
 header {
@@ -15,8 +15,8 @@ header img {
 	background: white;
 }
 
-section {
-	margin-top: 1em;
+.section {
+	margin-top: 0em;
 	font-size: 120%;
 	padding: 20px;
 	background: white;	
@@ -178,3 +178,25 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+/*Sign up button*/
+a.getstarted_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 240px;
+	color: #00008B;
+	background: #FF8C00;
+	font-size; 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+
+/* Round corners */
+
+ .round {
+ 	-moz-border-radius; 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+ }

@@ -1,9 +1,9 @@
 <header>
 
-<%= image_tag("header.jpg", :alt => "TicketForce banner", :size => "960x117") %>
+<!--<%= image_tag("header.jpg", :alt => "TicketForce banner", :size => "960x117") %>-->
 
 <div id="logotopper">
-	<a href="/"><img src="assets/images/header.jpg" width="960" height="117" /></a>
+	<%= image_tag("header.jpg", :alt => "TicketForce banner", :size => "960x117") %>
 	<ul id="nav" class="sf-menu">
   <li id="home"><a href="/">Home</a></li>
 		<li id="solutions">
@@ -37,22 +37,15 @@
 		<li id="clients">
 			<a href="#">Need Help?</a>
 			<ul>
-				<li><a href="https://tickets.ticketforce.com/reporting/login.asp" target="_blank">Promoters</a></li>
+				<li><a href="https://tickets.ticketforce.com/reporting/login.asp" target="_blank"><u>TF Promoters</u>  Check Reports</a></li>
+				<li><a href="https://myeasytix.com/reporting/login.asp" target="_blank"><u>Easytix Promoters</u>  Check Reports</a></li>
+				<li><a href="##" target="_blank"><u>All Promoters</u>  Submit an Event</a></li>
 				<li><a href="http://tfsupport.ticketforce.com/login.asp" target="_blank">Support Login</a></li>
                 <li><a href="socialmedia.php">Social Media Toolkit</a></li>
 			</ul>
 		</li>
 		<li id="contact"><a href="contact.php">Contact Us</a></li>
 	</ul><!-- #nav -->
-	<img src="assets/images/nav_shadow.gif" width="960" height="34" />
+	<img src="/images/nav_shadow.gif" width="960" height="34" />
 </div>
-
-
-<hr>
-    <nav class="round">
-		<ul>
-			<li>nav1</li>
-			<li>nav2</li>
-		</ul>
-	</nav>
 </header>
