@@ -13,9 +13,9 @@ body {
 	background-color: #EEEEEE;
 }
 
-a:link {
+/* a:link {
 	color: #003366;
-}
+} 
 
 a:hover {
 	text-decoration: none;
@@ -23,7 +23,7 @@ a:hover {
 
 a:visited {
 	color: #003366;
-}
+}*/
 
 .custom-facetimeform input {
 	display: block;

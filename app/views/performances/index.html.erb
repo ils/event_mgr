@@ -1,49 +1,32 @@
-<h1>Listing performances</h1>
-
+<h1 style="font-style:italic;">Event Administration</h1>
+<br />
 <table>
   <tr>
     <th>Company</th>
     <th>Customer</th>
-    <th>Customer email</th>
     <th>Name</th>
-    <th>Perf start</th>
-    <th>Perf end</th>
-    <th>Mail</th>
-    <th>Willcall</th>
-    <th>Description</th>
-    <th>Areas</th>
-    <th>Discounts</th>
-    <th>Pricechanges</th>
+    <th>Showtime</th>
     <th>Built</th>
-    <th>Proofsent</th>
-    <th>Proofapproved</th>
+    <th>ProofSent?</th>
+    <th>ProofApproved?</th>
     <th>Onsale</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @performances.each do |performance| %>
-  <tr>
+  <tr class="small">
     <td><%= performance.company %></td>
     <td><%= performance.customer %></td>
-    <td><%= performance.customer_email %></td>
     <td><%= performance.name %></td>
     <td><%= performance.perf_start %></td>
-    <td><%= performance.perf_end %></td>
-    <td><%= performance.mail %></td>
-    <td><%= performance.willcall %></td>
-    <td><%= performance.description %></td>
-    <td><%= performance.areas %></td>
-    <td><%= performance.discounts %></td>
-    <td><%= performance.pricechanges %></td>
     <td><%= performance.built %></td>
-    <td><%= performance.proofsent %></td>
-    <td><%= performance.proofapproved %></td>
+    <td>
+	  <% if performance.proofsent? then %><span class="notice">Sent</span><% else %><span class="error">Not Sent</span><% end %></td>
+    <td>
+	  <% if performance.proofapproved? then %><span class"notice">Approved!<span><% else %><span class="error">Not Approved</span><%end%></td>
     <td><%= performance.onsale %></td>
     <td><%= link_to 'Show', performance %></td>
     <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
-    <td><%= link_to 'Destroy', performance, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', performance, :confirm => 'Permanently delete this event from the system?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

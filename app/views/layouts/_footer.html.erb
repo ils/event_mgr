@@ -1,10 +1,18 @@
-<header>
+<footer>
+<div class="bottomtext" id="bottom">
+	<div id="footer">
+		<%= image_tag("bottom_shadow.png", :alt => "bottom shadow", :size => "960x44" )%>
+		<p><a href="http://www.ticketforce.com/">Home</a> | <a href="https://tickets.ticketforce.com/">Get Tickets</a> |  <a href="ticketing-solutions.php">Ticketing Solutions</a> |  <a href="faq.php">FAQ</a> |  <a href="schedule-demo.php">Get Started</a> |  <a href="news.php">News</a> | <a href="contact-business.php">Contact Us</a></p>
+		
+<script language="JavaScript">
+function openChart (url, name) {
+popupWin = window.open(url, 
+name,'scrollbars=yes,resizable=yes,width=480,height=420')
+}
+</script>
+        
+        <p><a href="javascript:openChart('http://tickets.ticketforce.com/privacystatement.asp','Chart')">Privacy Statement</a> | <a href="javascript:openChart('http://tickets.ticketforce.com/termsofuse.asp','Chart')">Terms of Use</a></p>
+	</div><!-- #footer -->
+</div><!-- #bottom -->
 
-<% image_tag("public\images\header.jpg", :alt => "TicketForce banner") %>
-
-    <nav class="round">
-		<ul>
-			<li></li>
-		</ul>
-	</nav>
-</header>
+</footer>

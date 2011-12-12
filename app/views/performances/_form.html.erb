@@ -1,7 +1,7 @@
 <%= form_for(@performance) do |f| %>
   <% if @performance.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@performance.errors.count, "error") %> prohibited this performance from being saved:</h2>
+      <h2><%= pluralize(@performance.errors.count, "error") %> prohibited this event from being saved:</h2>
 
       <ul>
       <% @performance.errors.full_messages.each do |msg| %>
@@ -12,70 +12,90 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :company %><br />
-    <%= f.text_field :company %>
+    <%= f.label "Your company's name:" %><br />
+    <%= f.text_field :company, :size => 50 %>
   </div>
   <div class="field">
-    <%= f.label :customer %><br />
+    <%= f.label "Your name:" %><br />
     <%= f.text_field :customer %>
   </div>
   <div class="field">
-    <%= f.label :customer_email %><br />
+    <%= f.label "Your e-mail address:" %><br />
     <%= f.text_field :customer_email %>
   </div>
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label "The name of your event as you'd like it to appear online:" %><br />
+    <%= f.text_field :name, :size => 100 %>
   </div>
   <div class="field">
-    <%= f.label :perf_start %><br />
-    <%= f.datetime_select :perf_start %>
+    <table>
+      <tr>
+        <td><%= f.label "What date and time does the event begin?" %></td>
+        <td><%= f.label "What date and time does the event end?" %></td></tr>
+      <tr>
+        <td><%= f.datetime_select :perf_start %></td>
+        <td><%= f.datetime_select :perf_end %></td></tr>      
+    </table>
   </div>
   <div class="field">
-    <%= f.label :perf_end %><br />
-    <%= f.datetime_select :perf_end %>
+  	<label for="delivery instructions"><u>Select the delivery methods you would like available to your buyers:</u></label><br />
+  	<table style="center;">
+      <tr>
+        <td><%= f.label "Mail delivery?" %></td>
+        <td><%= f.label "Will Call delivery?" %></td>
+        <td><%= f.label "Print@Home delivery?" %></td></tr>
+      <tr>
+        <td><%= f.check_box :mail %></td>
+        <td><%= f.check_box :willcall %></td>      
+        <td><%= f.check_box :willcall %></td></tr>
+    </table>
   </div>
   <div class="field">
-    <%= f.label :mail %><br />
-    <%= f.check_box :mail %>
+    <%= f.label "Describe the event (no pricing):" %><br />
+    <%= f.text_area :description, :size => "3x15" %>
   </div>
   <div class="field">
-    <%= f.label :willcall %><br />
-    <%= f.check_box :willcall %>
+    <%= f.label "How many differently priced areas are there for REGULAR ADULT tickets? What is the name and price for each area?" %><br />
+    <span class="small" style="font-style:italic;">Example: Main section is $25 and VIP section is $50.</span><br />
+	<%= f.text_area :areas %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.label "Are any discounts available, like child or senior prices? Please indicate any discounts and the areas they are available in:" %><br />
+    <%= f.text_area :discounts %>
   </div>
   <div class="field">
-    <%= f.label :areas %><br />
-    <%= f.text_field :areas %>
+    <%= f.label "Should the price ever change automatically, like an increase the day of the show?" %><br />
+    <%= f.text_field :pricechanges, :size => 100 %>
   </div>
-  <div class="field">
-    <%= f.label :discounts %><br />
-    <%= f.text_field :discounts %>
-  </div>
-  <div class="field">
-    <%= f.label :pricechanges %><br />
-    <%= f.text_field :pricechanges %>
-  </div>
-  <div class="field">
-    <%= f.label :built %><br />
-    <%= f.check_box :built %>
-  </div>
-  <div class="field">
-    <%= f.label :proofsent %><br />
-    <%= f.datetime_select :proofsent %>
-  </div>
-  <div class="field">
-    <%= f.label :proofapproved %><br />
-    <%= f.check_box :proofapproved %>
-  </div>
-  <div class="field">
-    <%= f.label :onsale %><br />
-    <%= f.check_box :onsale %>
-  </div>
+    <br /> <br />
+  <div>
+  <table style="border: solid; padding: 1em; width:60%;">
+    <tr>
+      <td><p class="small">This area will be hidden unless you're logged in:</p></td>
+    </tr>
+    <tr>
+      <td><div class="field">
+       <%= f.label :built %><br />
+       <%= f.check_box :built %>
+      </div></td>
+      <td><div class="field">
+       <%= f.label :proofsent %><br />
+       <%= f.check_box :proofsent %>
+      </div></td>
+    </tr>
+    <tr>
+     <td><div class="field">
+      <%= f.label :proofapproved %><br />
+      <%= f.check_box :proofapproved %>
+     </div></td>
+     <td><div class="field">
+      <%= f.label :onsale %><br />
+      <%= f.check_box :onsale %>
+     </div></td>
+   </tr>
+   </table>
+   </div>
   <div class="actions">
     <%= f.submit %>
-  </div>
+  </div>  
 <% end %>

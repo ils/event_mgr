@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<% if notice != nil %>
+<% then %><div class="notice">
+	<%= notice %>
+</div>
+<% end %>
 
 <p>
   <b>Company:</b>
@@ -59,26 +63,35 @@
   <b>Pricechanges:</b>
   <%= @performance.pricechanges %>
 </p>
-
-<p>
+<br />
+  <div>
+  <table style="border: solid; padding: 1em; width:60%;">
+    <tr>
+      <td><p class="small">This area will be hidden unless you're logged in:</p></td>
+    </tr>
+    <tr>
+<td>
   <b>Built:</b>
   <%= @performance.built %>
-</p>
+</td>
 
-<p>
+<td>
   <b>Proofsent:</b>
   <%= @performance.proofsent %>
-</p>
-
-<p>
+</td></tr>
+<tr>
+<td>
   <b>Proofapproved:</b>
   <%= @performance.proofapproved %>
-</p>
+</td>
 
-<p>
+<td>
   <b>Onsale:</b>
   <%= @performance.onsale %>
 </p>
+   </tr>
+   </table>
+   </div>
 
 
 <%= link_to 'Edit', edit_performance_path(@performance) %> |
