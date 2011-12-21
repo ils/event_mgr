@@ -6,6 +6,7 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', '1.3.4'
+gem 'calendar_date_select'
 
 group :development do
   gem 'annotate'

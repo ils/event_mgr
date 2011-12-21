@@ -30,11 +30,19 @@
   <div class="field">
     <table>
       <tr>
-        <td><%= f.label "What date and time does the event begin?" %></td>
+        <td><%= f.label "What date and time does the event start?" %></td>
         <td><%= f.label "What date and time does the event end?" %></td></tr>
       <tr>
-        <td><%= f.datetime_select :perf_start %></td>
-        <td><%= f.datetime_select :perf_end %></td></tr>      
+        <td><%= f.text_field :perf_startstr, :class => "field1", :value => "#{Date.today.strftime("%m/%d/%Y")} at 5:00 PM" %></td>
+        <td><%= f.text_field :perf_endstr, :class => "field1", :value => "#{Date.today.strftime("%m/%d/%Y")} at 9:00 PM" %></td></tr>  
+        <tr><td>
+        	        <!-- AnyTime testing-->
+
+<script>
+  $(".field1").AnyTime_picker(
+    { format: "%m/%d/%z at %h:%i %p" } );
+</script>
+		</td></tr>    
     </table>
   </div>
   <div class="field">
@@ -52,7 +60,7 @@
   </div>
   <div class="field">
     <%= f.label "Describe the event (no pricing):" %><br />
-    <%= f.text_area :description, :size => "3x15" %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label "How many differently priced areas are there for REGULAR ADULT tickets? What is the name and price for each area?" %><br />

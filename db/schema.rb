@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111211235916) do
+ActiveRecord::Schema.define(:version => 20111215042151) do
 
   create_table "performances", :force => true do |t|
     t.string   "company"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(:version => 20111211235916) do
     t.boolean  "onsale"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "perf_startstr"
+    t.string   "perf_endstr"
   end
 
 end

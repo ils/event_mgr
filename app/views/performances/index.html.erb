@@ -18,12 +18,12 @@
     <td><%= performance.customer %></td>
     <td><%= performance.name %></td>
     <td><%= performance.perf_start %></td>
-    <td><%= performance.built %></td>
+    <td><% if performance.built? then %><span class="notice">Yes</span><% else %><span class="error">No</span><% end %></td>
     <td>
 	  <% if performance.proofsent? then %><span class="notice">Sent</span><% else %><span class="error">Not Sent</span><% end %></td>
     <td>
-	  <% if performance.proofapproved? then %><span class"notice">Approved!<span><% else %><span class="error">Not Approved</span><%end%></td>
-    <td><%= performance.onsale %></td>
+	  <% if performance.proofapproved? then %><span class="notice">Approved!<span><% else %><span class="error">Not Approved</span><%end%></td>
+    <td><% if performance.onsale? then %><span class="notice">Yes!</span><% else %><span class="error">No</span><% end %></td>
     <td><%= link_to 'Show', performance %></td>
     <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
     <td><%= link_to 'Destroy', performance, :confirm => 'Permanently delete this event from the system?', :method => :delete %></td>
