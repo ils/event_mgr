@@ -14,7 +14,7 @@ class CreatePerformances < ActiveRecord::Migration
       t.string :discounts
       t.string :pricechanges
       t.boolean :built
-      t.datetime :proofsent
+      t.boolean :proofsent
       t.boolean :proofapproved
       t.boolean :onsale
 
