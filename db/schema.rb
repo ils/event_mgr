@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111221043235) do
+ActiveRecord::Schema.define(:version => 20120109054017) do
 
   create_table "performances", :force => true do |t|
     t.string   "company"
@@ -35,6 +35,17 @@ ActiveRecord::Schema.define(:version => 20111221043235) do
     t.string   "perf_endstr"
     t.string   "venue"
     t.string   "venue_addr"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "encrypted_password"
+    t.string   "salt"
+    t.string   "usertype"
+    t.string   "company"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

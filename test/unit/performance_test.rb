@@ -7,6 +7,7 @@ class PerformanceTest < ActiveSupport::TestCase
   end
 end
 
+
 # == Schema Information
 #
 # Table name: performances
@@ -30,5 +31,9 @@ end
 #  onsale         :boolean
 #  created_at     :datetime
 #  updated_at     :datetime
+#  perf_startstr  :string(255)
+#  perf_endstr    :string(255)
+#  venue          :string(255)
+#  venue_addr     :string(255)
 #
 
